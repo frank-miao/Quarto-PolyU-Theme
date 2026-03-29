@@ -1,0 +1,19 @@
+.reveal .slide-logo {
+  top: 12px !important;
+  right: 16px !important;
+  bottom: auto !important;
+  left: auto !important;
+  height: 96px !important;
+  max-height: none !important;
+  width: auto !important;
+  max-width: 420px !important;
+  z-index: 30 !important;
+}
+
+.reveal a,
+.reveal a:visited,
+.reveal a:hover,
+.reveal a:active {
+  text-decoration: underline !important;
+  text-underline-offset: 0.08em;
+}

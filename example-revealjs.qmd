@@ -1,0 +1,66 @@
+---
+title: "PolyU Brand Preview"
+subtitle: "Revealjs Template"
+author: "Frank"
+brand: _extensions/polyu/brand.yml
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    chalkboard: false
+    footer: "The Hong Kong Polytechnic University"
+    incremental: true
+    transition: fade
+---
+
+# Part 1
+
+## Introduction
+
+This slide is for checking whether the PolyU brand settings are applied correctly.
+
+- Heading color should follow `PolyU Red`
+- Body text should stay clean and readable
+- Links should inherit the brand accent, such as [PolyU Brand Assets](https://www.polyu.edu.hk/cpa/brand-assets/)
+
+## Typography Check
+
+The quick brown fox jumps over the lazy dog.
+
+`Monospace text` should still be easy to distinguish in technical slides.
+
+## Content Slide
+
+### Key Messages
+
+- Brand color should feel stable and academic
+- Secondary text should align with `PolyU Grey`
+- The overall look should remain simple and production-friendly
+
+## Code Block
+
+```python
+def polyu_score(impact: float, quality: float, innovation: float) -> float:
+    """Simple weighted score for demo purposes."""
+    return 0.4 * impact + 0.4 * quality + 0.2 * innovation
+
+
+print(round(polyu_score(88, 92, 90), 2))
+```
+
+## Table And Callout
+
+| Element | Expected Brand Effect |
+|---|---|
+| Heading | PolyU Red |
+| Main text | Dark neutral |
+| Secondary accents | PolyU Grey |
+| Links | Brand primary |
+
+::: {.callout-note}
+This callout helps us check how container components look under the current brand settings.
+:::
+
+## Closing
+
+If this page looks close to the official PolyU identity, the `brand.yml` is working as intended.
