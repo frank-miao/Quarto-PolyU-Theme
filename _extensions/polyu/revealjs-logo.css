@@ -9,11 +9,3 @@
   max-width: 420px !important;
   z-index: 30 !important;
 }
-
-.reveal a,
-.reveal a:visited,
-.reveal a:hover,
-.reveal a:active {
-  text-decoration: underline !important;
-  text-underline-offset: 0.08em;
-}

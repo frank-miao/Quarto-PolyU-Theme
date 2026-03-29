@@ -52,6 +52,7 @@ typography:
     weight: bold
   link:
     color: polyu-red
+    decoration: underline
   monospace:
     family: Courier New
 

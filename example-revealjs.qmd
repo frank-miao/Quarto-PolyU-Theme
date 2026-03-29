@@ -21,7 +21,7 @@ This slide is for checking whether the PolyU brand settings are applied correctl
 
 - Heading color should follow `PolyU Red`
 - Body text should stay clean and readable
-- Links should inherit the brand accent, such as [PolyU Brand Assets](https://www.polyu.edu.hk/cpa/brand-assets/)
+- Links should inherit the brand accent, such as [PolyU Brand Assets](https://www.polyu.edu.hk/cpa/brand-assets/){target="_blank"}
 
 ## Typography Check
 
