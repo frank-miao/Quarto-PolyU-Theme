@@ -8,8 +8,7 @@ institute:
   - "Joint work with"
 brand: _extensions/polyu/brand.yml
 format:
-  revealjs:
-    theme: default
+  polyu-revealjs:
     slide-number: true
     chalkboard: false
     footer: "The Hong Kong Polytechnic University"

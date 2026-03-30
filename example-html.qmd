@@ -1,0 +1,70 @@
+---
+title: "PolyU HTML Demo"
+subtitle: "Fixed Header and TOC Offset Check"
+author: "Frank"
+date: today
+brand: _extensions/polyu/brand.yml
+format:
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+# Overview
+
+This example page is for checking whether the `polyu-html` format applies the fixed top header correctly.
+
+The left side of the header should show the PolyU logo image, and the right side should show the tagline image.
+
+## What To Check
+
+1. The header stays fixed at the top while scrolling.
+2. The main content starts below the header and is not covered.
+3. The table of contents is shifted down together with the page content.
+4. Anchor jumps should stop below the header instead of hiding headings.
+
+# Content Demo
+
+This section adds enough structure to make the TOC visible and to test the spacing around headings, paragraphs, lists, and callouts.
+
+## Typography
+
+The page should still inherit the brand typography from the PolyU brand definition.
+
+### Paragraph
+
+PolyU HTML pages often need a compact but formal presentation style. This example keeps the layout simple so the header behavior is easy to inspect.
+
+### List
+
+- Brand colors should still apply.
+- Link styling should remain readable.
+- The header should not overlap the title block.
+
+## Callout
+
+::: {.callout-note}
+## Note
+
+If this note starts too close to the top of the page, the main content offset is not large enough.
+:::
+
+# Long Scroll Check
+
+This section exists mainly to create vertical space for scrolling.
+
+## Section A
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, libero a tristique viverra, justo dolor tristique arcu, sed luctus lorem libero non risus.
+
+## Section B
+
+Vivamus interdum, nunc ut posuere feugiat, sem nulla tincidunt nibh, vitae viverra nibh nisl at ipsum. Suspendisse potenti.
+
+## Section C
+
+Donec pretium, nibh in facilisis fermentum, massa sem posuere velit, at aliquam nunc eros non neque. [PolyU official website](https://www.polyu.edu.hk/).
+
+# Final Check
+
+Use this page to visually confirm the fixed header, content offset, and TOC offset together in one HTML document.
