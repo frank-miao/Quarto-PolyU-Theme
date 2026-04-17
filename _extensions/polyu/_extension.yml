@@ -10,6 +10,7 @@ contributes:
     polyu-html:
       base-format: html
       body-classes: polyu-html
+      css: polyu-html.css
     revealjs:
       logo: logo-name.png
       css: revealjs-logo.css
