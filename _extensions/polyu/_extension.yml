@@ -7,15 +7,15 @@ contributes:
     project:
       brand: brand.yml
   formats:
-    polyu-html:
+    html:
       base-format: html
       body-classes: polyu-html
       css: polyu-html.css
     revealjs:
-      logo: logo-name.png
+      logo: assets/logo-name.png
       css: revealjs-logo.css
       title-slide-attributes:
-        data-background-image: background.png
+        data-background-image: assets/background.png
         data-background-opacity: "0.45"
         data-background-size: cover
         data-background-position: center

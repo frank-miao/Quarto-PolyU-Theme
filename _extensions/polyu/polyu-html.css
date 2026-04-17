@@ -1,4 +1,4 @@
-body {
+body.polyu-html {
   --polyu-header-height: 92px;
   --polyu-header-gap: 1.5rem;
   --polyu-header-side-padding: clamp(1rem, 3vw, 2.5rem);
@@ -7,7 +7,7 @@ body {
   --polyu-header-bg: rgba(255, 255, 255, 0.96);
 }
 
-body::before {
+body.polyu-html::before {
   content: "";
   position: fixed;
   inset: 0 0 auto 0;
@@ -15,7 +15,7 @@ body::before {
   height: var(--polyu-header-height);
   border-bottom: 1px solid var(--polyu-header-border);
   background-color: var(--polyu-header-bg);
-  background-image: url("logo-name.png"), url("tagline.png");
+  background-image: url("assets/logo-name.png"), url("assets/tagline.png");
   background-repeat: no-repeat, no-repeat;
   background-position: left var(--polyu-header-side-padding) center, right var(--polyu-header-side-padding) center;
   background-size: clamp(180px, 30vw, 320px) auto, clamp(170px, 24vw, 280px) auto;
@@ -24,44 +24,44 @@ body::before {
   pointer-events: none;
 }
 
-body #quarto-content {
+body.polyu-html #quarto-content {
   padding-top: var(--polyu-header-offset);
 }
 
-body #quarto-margin-sidebar,
-body #TOC {
+body.polyu-html #quarto-margin-sidebar,
+body.polyu-html #TOC {
   top: var(--polyu-header-offset);
 }
 
-body .sidebar.margin-sidebar {
+body.polyu-html .sidebar.margin-sidebar {
   padding-top: 0.5rem;
 }
 
-body #quarto-content,
-body #quarto-document-content,
-body #title-block-header,
-body .anchored {
+body.polyu-html #quarto-content,
+body.polyu-html #quarto-document-content,
+body.polyu-html #title-block-header,
+body.polyu-html .anchored {
   scroll-margin-top: calc(var(--polyu-header-offset) + 0.5rem);
 }
 
 @media (max-width: 991.98px) {
-  body {
+  body.polyu-html {
     --polyu-header-height: 80px;
     --polyu-header-gap: 1rem;
   }
 
-  body::before {
+  body.polyu-html::before {
     background-position: left 1rem center, right 1rem center;
     background-size: min(52vw, 240px) auto, min(34vw, 170px) auto;
   }
 }
 
 @media (max-width: 575.98px) {
-  body {
+  body.polyu-html {
     --polyu-header-height: 72px;
   }
 
-  body::before {
+  body.polyu-html::before {
     background-size: min(58vw, 210px) auto, min(32vw, 120px) auto;
   }
 }

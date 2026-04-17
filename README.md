@@ -6,10 +6,10 @@ This extension provides a reusable `brand.yml` with:
 
 - PolyU-inspired brand colors
 - PolyU logo assets
+- A reusable `polyu-html` HTML format
 - A reusable `polyu-revealjs` revealjs format
-- Revealjs defaults for the top-right logo
-- Revealjs title slide background
-- Revealjs link underline styling
+- HTML defaults for the fixed header layout
+- Revealjs defaults for the top-right logo and title slide background
 
 ## Installation
 
@@ -21,14 +21,21 @@ This installs the extension under `_extensions/polyu`.
 
 ## Usage
 
+Configure the extension in your project `_quarto.yml`:
+
+```yaml
+project:
+  type: default
+  brand: _extensions/frank-miao/polyu/brand.yml
+```
+
 Use the brand in your Quarto document metadata:
 
 ```yaml
 ---
 title: "My Document"
-brand: _extensions/polyu/brand.yml
 format:
-  html:
+  polyu-html:
     toc: true
 ---
 ```
@@ -38,7 +45,6 @@ For slides:
 ```yaml
 ---
 title: "My Presentation"
-brand: _extensions/polyu/brand.yml
 format:
   polyu-revealjs:
     slide-number: true
@@ -47,16 +53,16 @@ format:
 
 ## HTML Defaults
 
-When used with `html` together with this brand, the extension currently applies these defaults:
+When used with `polyu-html`, the extension currently applies these defaults:
 
 - fixed top header with the PolyU logo and tagline
 - extra top spacing for the main content
 - matching top offset for the TOC sidebar so it is not covered by the header
-- implementation via `brand.yml` Bootstrap rules and HTML defaults, without standalone HTML include files
+- implementation via the custom `polyu-html` format, without standalone HTML include files
 
 ## Revealjs Defaults
 
-When used with `revealjs`, the extension currently applies these defaults:
+When used with `polyu-revealjs`, the extension currently applies these defaults:
 
 - `polyu-revealjs` format entry
 - top-right wide PolyU logo
@@ -64,7 +70,7 @@ When used with `revealjs`, the extension currently applies these defaults:
 - title slide background opacity
 - underlined links
 
-These defaults are defined in [`_extensions/polyu/brand.yml`](_extensions/polyu/brand.yml).
+These defaults are defined in [`_extensions/polyu/_extension.yml`](_extensions/polyu/_extension.yml).
 
 ## Example
 

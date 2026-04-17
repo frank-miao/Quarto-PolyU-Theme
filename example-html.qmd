@@ -3,9 +3,8 @@ title: "PolyU HTML Demo"
 subtitle: "Fixed Header and TOC Offset Check"
 author: "Frank"
 date: today
-brand: _extensions/polyu/brand.yml
 format:
-  html:
+  polyu-html:
     toc: true
     toc-depth: 3
 ---

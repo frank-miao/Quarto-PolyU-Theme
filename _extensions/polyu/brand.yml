@@ -15,9 +15,9 @@ meta:
 
 logo:
   images:
-    icon: logo.png
-    icon-transparent: logo-trans.png
-    wide: logo-name.png
+    icon: assets/logo.png
+    icon-transparent: assets/logo-trans.png
+    wide: assets/logo-name.png
   small: icon
   medium: wide
   large: wide
@@ -55,17 +55,3 @@ typography:
     decoration: underline
   monospace:
     family: Courier New
-
-defaults:
-  quarto:
-    format:
-      html:
-        css: polyu-html.css
-      revealjs:
-        logo: logo-name.png
-        css: revealjs-logo.css
-        title-slide-attributes:
-          data-background-image: background.png
-          data-background-opacity: "0.45"
-          data-background-size: cover
-          data-background-position: center

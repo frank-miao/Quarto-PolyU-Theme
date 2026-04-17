@@ -1,12 +1,10 @@
 ---
 title: "PolyU Brand Preview"
 subtitle: "Revealjs Template"
-author: "Fangran MIAO"
+author: "Frank MIAO"
 institute:
   - "Department of Data Science and Artificial Intelligence"
   - "The Hong Kong Polytechnic University"
-  - "Joint work with"
-brand: _extensions/polyu/brand.yml
 format:
   polyu-revealjs:
     slide-number: true
