@@ -11,7 +11,13 @@ contributes:
       base-format: html
       body-classes: polyu-html
       css: polyu-html.css
+      html-math-method:
+        method: mathjax
+        url: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     revealjs:
+      html-math-method:
+        method: mathjax
+        url: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
       logo: assets/logo-name.png
       css: revealjs-logo.css
       title-slide-attributes:

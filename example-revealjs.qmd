@@ -30,6 +30,12 @@ The quick brown fox jumps over the lazy dog.
 
 `Monospace text` should still be easy to distinguish in technical slides.
 
+Inline math should render correctly: $\alpha + \beta = \gamma$.
+
+$$
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+$$
+
 ## Content Slide
 
 ### Key Messages

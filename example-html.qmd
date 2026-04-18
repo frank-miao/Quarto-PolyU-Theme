@@ -30,6 +30,14 @@ This section adds enough structure to make the TOC visible and to test the spaci
 
 The page should still inherit the brand typography from the PolyU brand definition.
 
+Inline math should render correctly, for example $E = mc^2$.
+
+Display math should also work:
+
+$$
+\int_0^1 x^2 \, dx = \frac{1}{3}
+$$
+
 ### Paragraph
 
 PolyU HTML pages often need a compact but formal presentation style. This example keeps the layout simple so the header behavior is easy to inspect.

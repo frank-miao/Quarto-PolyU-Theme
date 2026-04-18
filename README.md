@@ -51,6 +51,18 @@ format:
 ---
 ```
 
+## Math Support
+
+Both `polyu-html` and `polyu-revealjs` enable MathJax by default through `html-math-method`:
+
+```yaml
+html-math-method:
+  method: mathjax
+  url: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+```
+
+This means inline math like `$E = mc^2$` and display math blocks work without extra setup. If needed, you can still override `html-math-method` in a document or project file.
+
 ## HTML Defaults
 
 When used with `polyu-html`, the extension currently applies these defaults:
