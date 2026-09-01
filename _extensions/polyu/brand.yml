@@ -9,7 +9,7 @@ meta:
   name:
     short: PolyU
     full: The Hong Kong Polytechnic University
-  links:
+  link:
     home: https://www.polyu.edu.hk/
     brand: https://www.polyu.edu.hk/cpa/brand-assets/
 
@@ -29,29 +29,39 @@ color:
     black: "#231F20"
     white: "#FFFFFF"
     neutral-light: "#F5F5F5"
+    success-green: "#2E7D32"
+    info-blue: "#006D8F"
+    warning-amber: "#8A4D00"
 
   foreground: black
   background: white
   primary: polyu-red
   secondary: polyu-grey
   tertiary: neutral-light
-  success: polyu-grey
-  info: polyu-grey
-  warning: polyu-red
+  success: success-green
+  info: info-blue
+  warning: warning-amber
   danger: polyu-red
   light: white
   dark: black
 
 typography:
+  fonts:
+    - family: Latin Modern Sans
+      source: system
+      weight: [400, 700]
+    - family: Latin Modern Mono
+      source: system
+      weight: [400]
   base:
-    family: TeX Gyre Pagella
-    line-height: 1.2
+    family: Latin Modern Sans
+    line-height: 1.5
   headings:
-    family: Computer Modern Sans Serif
+    family: Latin Modern Sans
     color: polyu-red
     weight: bold
   link:
     color: polyu-red
     decoration: underline
   monospace:
-    family: Courier New
+    family: Latin Modern Mono

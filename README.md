@@ -17,7 +17,25 @@ This extension provides a reusable `brand.yml` with:
 quarto add frank-miao/Quarto-PolyU-Theme
 ```
 
-This installs the extension under `_extensions/polyu`.
+This installs the extension under `_extensions/frank-miao/polyu`.
+
+## Development Hooks and Releases
+
+This repository uses [prek](https://prek.j178.dev/) to validate TOML/YAML files and enforce [Conventional Commits](https://www.conventionalcommits.org/) at commit time. The tools are managed with [mise](https://mise.jdx.dev/). Install the hooks once after cloning:
+
+```bash
+mise x -- prek install
+```
+
+Use conventional commit messages such as `fix: correct logo alignment` or `feat: add a new HTML option`. The `commit-msg` hook rejects invalid messages.
+
+The extension version is stored in [`_extensions/polyu/_extension.yml`](_extensions/polyu/_extension.yml). When preparing a release, run:
+
+```bash
+mise x -- cog bump --auto
+```
+
+Cocogitto inspects commits since the previous `vMAJOR.MINOR.PATCH` tag, synchronizes the extension metadata, then creates a release commit and tag. Its rules are: `BREAKING CHANGE:` or `!` increments major, `feat:` increments minor, and `fix:` increments patch. For the initial `1.0.0` baseline, create the `v1.0.0` tag once before using `cog bump`.
 
 ## Usage
 
@@ -26,7 +44,8 @@ Configure the extension in your project `_quarto.yml`:
 ```yaml
 project:
   type: default
-  brand: _extensions/frank-miao/polyu/brand.yml
+
+brand: _extensions/frank-miao/polyu/brand.yml
 ```
 
 Use the brand in your Quarto document metadata:
@@ -98,4 +117,5 @@ quarto render example-revealjs.qmd
 
 - Brand definition: [`_extensions/polyu/brand.yml`](_extensions/polyu/brand.yml)
 - Extension metadata: [`_extensions/polyu/_extension.yml`](_extensions/polyu/_extension.yml)
-- Revealjs CSS overrides: [`_extensions/polyu/revealjs-logo.css`](_extensions/polyu/revealjs-logo.css)
+- Shared font CSS: [`_extensions/polyu/polyu-fonts.css`](_extensions/polyu/polyu-fonts.css)
+- Revealjs CSS overrides: [`_extensions/polyu/polyu-revealjs-logo.css`](_extensions/polyu/polyu-revealjs-logo.css)

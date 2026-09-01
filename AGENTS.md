@@ -19,7 +19,7 @@ You should refer to the following documentation for more details on how to use a
 
 - Treat `html` and `revealjs` as different rendering systems.
 - Do not try to move `revealjs` styling into Bootstrap-based brand rules.
-- For `revealjs`, keep format-specific styling in dedicated revealjs options or CSS files such as `_extensions/polyu/revealjs-logo.css`.
+- For `revealjs`, keep format-specific styling in dedicated revealjs options or CSS files such as `_extensions/polyu/polyu-revealjs-logo.css`.
 - For HTML-only fixed elements like headers, use CSS generated through brand/bootstrap rules rather than injected HTML fragments.
 
 ## Validation

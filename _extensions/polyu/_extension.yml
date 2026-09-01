@@ -7,19 +7,24 @@ contributes:
     project:
       brand: brand.yml
   formats:
+    common:
+      resources:
+        - assets/fonts/lmsans-regular.ttf
+        - assets/fonts/lmsans-bold.ttf
+        - assets/fonts/lmmono-regular.ttf
+      html-math-method:
+        method: mathjax
+        url: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     html:
-      base-format: html
       body-classes: polyu-html
-      css: polyu-html.css
-      html-math-method:
-        method: mathjax
-        url: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+      css:
+        - polyu-fonts.css
+        - polyu-html.css
     revealjs:
-      html-math-method:
-        method: mathjax
-        url: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
       logo: assets/logo-name.png
-      css: revealjs-logo.css
+      css:
+        - polyu-fonts.css
+        - polyu-revealjs-logo.css
       title-slide-attributes:
         data-background-image: assets/background.png
         data-background-opacity: "0.45"
