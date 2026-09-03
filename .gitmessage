@@ -1,0 +1,15 @@
+# <type>(<scope>): <imperative summary>
+#
+# Allowed examples: feat: add a format option
+#                   fix: correct logo alignment
+#
+# Context or rationale (optional):
+#
+# Changes (optional):
+# - <change or notable implementation detail>
+# - <change or notable implementation detail>
+#
+# Breaking changes (optional):
+# BREAKING CHANGE: <describe the incompatible change and migration path>
+#
+# Remove comment lines and leave the subject line non-empty before committing.
