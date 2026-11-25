@@ -1,6 +1,6 @@
 title: PolyU
 author: Frank
-version: 1.2.0
+version: 1.2.1
 quarto-required: ">=1.9.0"
 contributes:
   metadata:
