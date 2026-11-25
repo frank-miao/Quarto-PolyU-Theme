@@ -1,3 +1,4 @@
 [tools]
-cocogitto = "latest"
-prek = "latest"
+git-cliff = "latest"
+hk = "latest"
+pkl = "latest"

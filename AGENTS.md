@@ -49,8 +49,8 @@ If either skill is unavailable, ask the user to install the skills recorded in `
 ## Commits and Releases
 
 - Follow Conventional Commits; use messages such as `feat: add a format option` or `fix: correct logo alignment`.
-- The prek hooks validate TOML and YAML files before commits and run `mise x -- cog verify --file` for commit messages.
+- The hk hooks (configured in `hk.pkl`) verify commit messages with hk's `check_conventional_commit`.
 - Do not bypass a failing commit hook; correct the affected file or commit message instead.
 - The extension version is stored in `_extensions/polyu/_extension.yml`.
-- Prepare releases with `mise x -- cog bump --auto`; Cocogitto uses commits since the previous `vMAJOR.MINOR.PATCH` tag to determine the next version, creates the release commit and tag, and runs `scripts/sync-version.sh` to update extension metadata before the bump.
+- Prepare releases with `mise x -- ./scripts/release.sh`; git-cliff (configured in `cliff.toml`) uses commits since the previous `vMAJOR.MINOR.PATCH` tag to determine the next version, and the script runs `scripts/sync-version.sh` to update extension metadata, then creates the release commit and tag.
 - `BREAKING CHANGE:` or a `!` marks a major release, `feat:` marks a minor release, and `fix:` marks a patch release.

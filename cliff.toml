@@ -1,0 +1,8 @@
+# git-cliff is only used to compute the next version; no changelog is generated.
+[git]
+conventional_commits = true
+filter_unconventional = true
+tag_pattern = "v[0-9]*"
+
+[bump]
+initial_tag = "v1.0.0"
